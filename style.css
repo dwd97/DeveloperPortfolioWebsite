@@ -1,6 +1,7 @@
-body{
+html, body{
     font-family: Roboto, sans-serif;
     background-color: #F6FFF8;
+    height: 100%;
 }
 
 .row{
@@ -8,7 +9,7 @@ body{
 }
 
 #intro{
-    height: 70dvh;
+    height: 70%;
 }
 
 #intro h1{
