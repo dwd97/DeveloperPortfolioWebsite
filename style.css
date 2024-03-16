@@ -4,6 +4,10 @@ body{
     background-color: #F6FFF8;
 }
 
+.row {
+    margin:0px;
+}
+
 #header {
     color: white;
     background-color: rgba(0, 0, 0, 0.8);
