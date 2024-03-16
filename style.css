@@ -7,6 +7,10 @@ body{
     margin: 0;
 }
 
+#intro{
+    height: 50vh;
+}
+
 #header {
     color: white;
     background-color: rgba(0, 0, 0, 0.8);
