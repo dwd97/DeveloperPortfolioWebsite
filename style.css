@@ -1,11 +1,10 @@
 body{
-    margin: 0;
     font-family: Roboto, sans-serif;
     background-color: #F6FFF8;
 }
 
-.row {
-    margin:0px;
+.row{
+    margin: 0;
 }
 
 #header {
