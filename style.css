@@ -78,6 +78,10 @@ html, body{
     max-width: 100px;
 }
 
+#legalLinks a{
+    font-size: 0.7em;
+}
+
 .appContainer img{
     box-shadow: 2px 2px 10px 1px rgb(0 0 0 / 50%);
     border-radius: 20px;
