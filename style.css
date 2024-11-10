@@ -8,6 +8,11 @@ html, body{
     margin: 0;
 }
 
+.btn-primary{
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 10px 0px;
+}
+
 #intro{
     height: 70%;
 }
