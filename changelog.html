@@ -27,7 +27,7 @@
             <img src="images/logoName.png" alt="logoName">
         </a>
     </div>
-    
+
     <div id="google_translate_element"></div>
 
     <div class="container mt-5" id="contentIntro">
@@ -131,7 +131,7 @@
                             <li>buttons game</li>
                             <li>update API and billing library</li>
                         </ul>
-                   </div>
+                    </div>
                 </div>
             </div>
             <div class="accordion-item">
@@ -356,19 +356,20 @@
                 <h3>Flashlight</h3>
             </div>
         </div>
-        <div class="accordion accordion-flush" id="accordionLED">
+        <div class="accordion accordion-flush" id="accordionFlash">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="heading-flashlight-1.0">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse-flashlight-1.0" aria-expanded="false" aria-controls="collapse-flashlight-1.0">
+                        data-bs-target="#collapse-flashlight-1.0" aria-expanded="false"
+                        aria-controls="collapse-flashlight-1.0">
                         Version 1.0
                         <div class="inDevTag">
                             <p>IN DEVELOPMENT</p>
                         </div>
                     </button>
                 </h2>
-                <div id="collapse-flashlight-1.0" class="accordion-collapse collapse" aria-labelledby="heading-flashlight-1.0"
-                    data-bs-parent="#accordionLED">
+                <div id="collapse-flashlight-1.0" class="accordion-collapse collapse"
+                    aria-labelledby="heading-flashlight-1.0" data-bs-parent="#accordionFlash">
                     <div class="accordion-body">
                         <ul>
                             <li>Release to IOS</li>
@@ -394,6 +395,104 @@
                             <li>FAQ page on dczt.dev</li>
                             <li>flashscreen on startup</li>
                             <li>optimize for better performance and update packages</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- decision roulette-->
+        <div class="row align-items-center">
+            <div class="col-auto">
+                <a href="decision-roulette.html">
+                    <img class="changelogAppIcon" src="images/decisionroulette/icon.png" alt="decisionRouletteIcon">
+                </a>
+            </div>
+            <div class="col changelogAppName">
+                <h3>Decision Roulette</h3>
+            </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionDecision">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-decision-2.4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse-decision-2.4" aria-expanded="false"
+                        aria-controls="collapse-decision-2.4">
+                        Vesion 2.4
+                        <div class="inDevTag">
+                            <p>IN DEVELOPMENT</p>
+                        </div>
+                    </button>
+                </h2>
+                <div id="collapse-decision-2.4" class="accordion-collapse collapse"
+                    aria-labelledby="heading-decision-2.4" data-bs-parent="#accordionDecision">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>billing library update</li>
+                            <li>translate roulettes and app</li>
+                            <li>optimized scroll rects</li>
+                            <li>new settings menu</li>
+                            <li>FAQ - on dczt.dev</li>
+                            <li>app store preview ios and android</li>
+                            <li>subscription and ads monetization strategy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- other projects-->
+        <div class="row align-items-center">
+            <div class="col-auto">
+                <img class="changelogAppIcon" src="images/codingIcon.png" alt="decisionRouletteIcon">
+            </div>
+            <div class="col changelogAppName">
+                <h3>Other coding projects</h3>
+            </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionOther">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-docsFAQ">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse-docsFAQ" aria-expanded="false"
+                        aria-controls="collapse-docsFAQ">
+                        Docs and FAQ
+                        <div class="inDevTag">
+                            <p>IN DEVELOPMENT</p>
+                        </div>
+                    </button>
+                </h2>
+                <div id="collapse-docsFAQ" class="accordion-collapse collapse"
+                    aria-labelledby="heading-docsFAQ" data-bs-parent="#accordionOther">
+                    <div class="accordion-body">
+                        <p>Add docs and FAQ subpage to website dczt.dev where users will have all information regarding an app and docs that will help them navigate the app and get questions answered.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-billingapi2024">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse-billingapi2024" aria-expanded="false"
+                        aria-controls="collapse-billingapi2024">
+                        Billing library and API
+                        <div class="inDevTag">
+                            <p>IN DEVELOPMENT</p>
+                        </div>
+                    </button>
+                </h2>
+                <div id="collapse-billingapi2024" class="accordion-collapse collapse"
+                    aria-labelledby="heading-billingapi2024" data-bs-parent="#accordionOther">
+                    <div class="accordion-body">
+                        Update billing libraries and android apis of these projects:
+                        <ul>
+                            <li>Antistress</li>
+                            <li>Games For 2 Players</li>
+                            <li>Nothing</li>
+                            <li>234 Player Games</li>
+                            <li>Decision Roulette</li>
+                            <li>Yes or No</li>
                         </ul>
                     </div>
                 </div>
@@ -439,12 +538,13 @@
         });
     </script>
     <script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-}
-</script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+    </script>
 
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html>
