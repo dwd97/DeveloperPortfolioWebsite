@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-44VPHXH9L6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-44VPHXH9L6');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/webIcon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Changelog</title>
+</head>
+
+<body>
+    <div id="header" class="container-fluid row text-center justify-content-center">
+        <a href="index.html" class="col">
+            <img src="images/logoName.png" alt="logoName">
+        </a>
+    </div>
+
+    <div class="container mt-5" id="contentIntro">
+        <div class="row justify-content-center text-center">
+            <h1 class="col-12">Changelog - request features/report bugs</h1>
+        </div>
+        <hr>
+        <h5 style="margin: 20px;" class="text-center">
+            Request a feature or report a bug using this form. Thank you for your feedback!
+        </h5>
+        <div class="row" id="requestForm">
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4">
+                    <label for="application" class="form-label">*Application</label>
+                    <select class="form-select" id="application" required>
+                        <option selected disabled value="">- Choose application -</option>
+                        <option>Antistress</option>
+                        <option>Frequency generator</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select an application.
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="platform" class="form-label">*Platform</label>
+                    <select class="form-select" id="platform" required>
+                        <option selected disabled value="">- Choose platform -</option>
+                        <option>Android</option>
+                        <option>iOS</option>
+                        <option>Other (specify in text)</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select your platform.
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="reason" class="form-label">*Reason</label>
+                    <select class="form-select" id="reason" required>
+                        <option selected disabled value="">- Choose reason -</option>
+                        <option>Feature request</option>
+                        <option>Bug report</option>
+                        <option>Other</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select a reason.
+                    </div>
+                </div>
+                <div class="col-12">
+                    <label for="message" class="form-label">*Message</label>
+                    <textarea class="form-control" id="message" placeholder="Your message..." required></textarea>
+                    <div class="invalid-feedback">
+                        Please enter a message...
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" id="formSubmitBtn" type="button">Send</button>
+                </div>
+                <div class="col-12">
+                    <p style="font-size: small;">*You can add screenshots/files in the next step.</p>
+                </div>
+            </form>
+        </div>
+        <hr>
+
+        <!-- antistress games-->
+        <div class="row align-items-center">
+            <div class="col-auto">
+                <img class="changelogAppIcon" src="images/antistress/icon.jpg" alt="antistressIcon">
+            </div>
+            <div class="col">
+                <h3>Antistress Games - Changelog (Features & Bugs)</h3>
+            </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlush">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading-antistress-7.4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse-antistress-7.4" aria-expanded="false"
+                        aria-controls="flush-collapse-antistress-7.4">
+                        Version 7.4 - Coming Soon
+                    </button>
+                </h2>
+                <div id="flush-collapse-antistress-7.4" class="accordion-collapse collapse"
+                    aria-labelledby="flush-heading-antistress-7.4" data-bs-parent="#accordionFlush">
+                    <div class="accordion-body">
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading-antistress-7.3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse-antistress-7.3" aria-expanded="false"
+                        aria-controls="flush-collapse-antistress-7.3">
+                        Version 7.3 - 30/03/2024
+                    </button>
+                </h2>
+                <div id="flush-collapse-antistress-7.3" class="accordion-collapse collapse"
+                    aria-labelledby="flush-heading-antistress-7.3" data-bs-parent="#accordionFlush">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>New: Xylophone</li>
+                            <li>New: Hair Clipper</li>
+                            <li>Fixed quiet sounds and vibrations</li>
+                            <li>Fixed UI and performance issues</li>
+                            <li>Added Favorites</li>
+                            <li>Fixed bugs and added new content</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- frequency generator -->
+        <div class="row align-items-center">
+            <div class="col-auto">
+                <img class="changelogAppIcon" src="images/frequencygenerator/icon.png" alt="antistressIcon">
+            </div>
+            <div class="col">
+                <h3>Frequency Generator - Changelog (Features & Bugs)</h3>
+            </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlush">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-frequency-2.5">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse-frequency-2.5" aria-expanded="false"
+                        aria-controls="collapse-frequency-2.5">
+                        Version 2.5 - Coming Soon
+                    </button>
+                </h2>
+                <div id="collapse-frequency-2.5" class="accordion-collapse collapse"
+                    aria-labelledby="heading-frequency-2.5" data-bs-parent="#accordionFlush">
+                    <div class="accordion-body">
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading-frequency-2.4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse-frequency-2.4" aria-expanded="false"
+                        aria-controls="flush-collapse-frequency-2.4">
+                        Version 2.4 - 26/10/2024
+                    </button>
+                </h2>
+                <div id="flush-collapse-frequency-2.4" class="accordion-collapse collapse"
+                    aria-labelledby="flush-heading-frequency-2.4" data-bs-parent="#accordionFlush">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Fixed preset error</li>
+                            <li>Fixed frequency sometimes not correctly updated</li>
+                            <li>Added FAQ to settings</li>
+                            <li>Fixed lagging when launching notes screen, optimized scroll view</li>
+                            <li>Added more efficient export method</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- speaker cleaner -->
+        <div class="row align-items-center">
+            <div class="col-auto">
+                <a href="speaker-cleaner.html">
+                    <img class="changelogAppIcon" src="images/speakercleaner/icon.png" alt="speakerCleanerIcon">
+                </a>
+            </div>
+            <div class="col">
+                <h3>Speaker Cleaner - Changelog (Features & Bugs)</h3>
+            </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlush">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-speaker-5.16">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse-speaker-5.16" aria-expanded="false"
+                        aria-controls="collapse-speaker-5.16">
+                        Version 5.16 - Coming Soon
+                    </button>
+                </h2>
+                <div id="collapse-speaker-5.16" class="accordion-collapse collapse"
+                    aria-labelledby="heading-speaker-5.16" data-bs-parent="#accordionFlush">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>FAQ section in settings</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-speaker-5.15">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse-speaker-5.15" aria-expanded="false"
+                        aria-controls="collapse-speaker-5.15">
+                        Version 5.15 - 13/07/2024
+                    </button>
+                </h2>
+                <div id="collapse-speaker-5.15" class="accordion-collapse collapse"
+                    aria-labelledby="heading-speaker-5.15" data-bs-parent="#accordionFlush">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>More testing sounds</li>
+                            <li>New design</li>
+                            <li>Frequency generator</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    </div>
+    <div id="footer" class="container-fluid text-center">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-12 p-1">
+                <a href="index.html">
+                    HOME
+                </a>
+            </div>
+            <div class="col-12 pt-3 m-0 text-white-50">DCZT © 2024</div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('formSubmitBtn').addEventListener('click', function () {
+            const platform = document.getElementById('platform').value;
+            const reason = document.getElementById('reason').value;
+            const message = document.getElementById('message').value;
+            const application = document.getElementById('application').value;
+
+            if (platform && reason && message && application) {
+                const mailtoLink = `mailto:david.kolp97@gmail.com?subject=${encodeURIComponent(reason)}&body=${encodeURIComponent(`Platform: ${platform}\n\nApplication: ${application}\n\nMessage: ${message}`)}`;
+                window.location.href = mailtoLink;
+            } else {
+                alert('Please fill out all fields.');
+            }
+        });
+    </script>
+</body>
+
+</html>
