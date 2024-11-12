@@ -170,9 +170,9 @@ html, body{
 .inDevTag{
     background-color: #ffd900;
     color: black;
-    margin-left: 25px;
-    height: 35px;
-    border-radius: 10px;
+    margin-left: 10px;
+    height: 30px;
+    border-radius: 7px;
     border: 1px solid hsla(0, 0%, 0%, 1);
     box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 50%);
     padding: 5px;
@@ -183,5 +183,5 @@ html, body{
     margin-top: 4px;
     margin-left: 5px;
     margin-right: 5px;
-    font-size: 0.9em;
+    font-size: 0.7em;
 }
