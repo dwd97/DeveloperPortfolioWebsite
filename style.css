@@ -199,3 +199,8 @@ html, body{
     width: 75px !important;
     border-radius: 18px !important;
 }
+
+.list-group-item a{
+    text-decoration: none;
+    color: black;
+}
