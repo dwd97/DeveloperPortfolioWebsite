@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-44VPHXH9L6"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'G-44VPHXH9L6');
+    // Basic configuration for Google Analytics
+    gtag('config', 'G-44VPHXH9L6', {
+        'page_title': 'AI Calorie Counter - Redirecting',
+        'page_path': '/redirects/ai-calorie-counter.html'
+    });
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,16 +41,43 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            let destination = "unknown";
 
             if (/android/i.test(userAgent)) {
-                // Redirect to Google Play Store
+                destination = "Google Play Store";
+                gtag('event', 'redirect', {
+                    'event_category': 'Redirect',
+                    'event_label': 'Google Play',
+                    'device': 'Android',
+                    'page_path': '/redirects/ai-calorie-counter.html'
+                });
                 window.location.href = "https://play.google.com/store/apps/details?id=com.DCZT.AICalorieCounter";
             } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-                // Redirect to Apple App Store
+                destination = "Apple App Store";
+                gtag('event', 'redirect', {
+                    'event_category': 'Redirect',
+                    'event_label': 'Apple App Store',
+                    'device': 'iOS',
+                    'page_path': '/redirects/ai-calorie-counter.html'
+                });
                 window.location.href = "https://apps.apple.com";
             } else {
+                destination = "Unrecognized Device";
+                gtag('event', 'redirect', {
+                    'event_category': 'Redirect',
+                    'event_label': 'Unrecognized Device',
+                    'device': 'Unknown',
+                    'page_path': '/redirects/ai-calorie-counter.html'
+                });
                 document.body.innerHTML = "<h1>Device not recognized. Unable to redirect.</h1>";
             }
+
+            // Track when the redirect decision is made
+            gtag('event', 'decision_made', {
+                'event_category': 'Redirect Decision',
+                'destination': destination,
+                'page_path': '/redirects/ai-calorie-counter.html'
+            });
         });
     </script>
 </head>
