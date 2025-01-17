@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            if (/android/i.test(userAgent)) {
+                // Redirect to Google Play Store
+                window.location.href = "https://play.google.com/store/apps/details?id=com.DCZT.AICalorieCounter";
+            } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                // Redirect to Apple App Store
+                window.location.href = "https://apps.apple.com";
+            } else {
+                document.body.innerHTML = "<h1>Device not recognized. Unable to redirect.</h1>";
+            }
+        });
+    </script>
+</head>
+<body>
+    <h1>Redirecting you to the appropriate store...</h1>
+</body>
+</html>
