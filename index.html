@@ -1,40 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-44VPHXH9L6"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'G-44VPHXH9L6');
+        gtag('config', 'G-44VPHXH9L6');
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The DCZT website aims to show all DCZT games & apps in one place! This app provides info about all of DCZT's software and makes them globally available."/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta name="description"
+        content="The DCZT website aims to show all DCZT games & apps in one place! This app provides info about all of DCZT's software and makes them globally available." />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="icon" href="images/webIcon.png">
     <link rel="stylesheet" href="style.css">
     <title>DCZT</title>
 </head>
+
 <body>
-    <div id="header" class="container-fluid row text-center justify-content-center">
-            <a href="index.html" class="col">
-                <img src="images/logoName.png" alt="logoName">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark"
+        style="background-color: rgba(0, 0, 0, 0.8); box-shadow: 0px 2px 10px 0px rgb(0 0 0 / 50%);">
+        <div class="container-fluid">
+            <!-- Brand Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logoName.png" alt="logoName" style="max-width: 100px; height: auto;">
             </a>
-    </div>
-    <div class="justify-content-center row align-items-center">
-        <div id="formSubmitAlert" class="row text-center align-items-center justify-content-center">
-            <h5>Use this <a class="btn btn-primary" style="border: 0px;margin:10px;" href="changelog.html">subpage</a> to submit feature requests/report bugs or view changelog.</h5>
+            <!-- Toggler for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="changelog.html">Changelog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-me.html">About Me</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <div class="justify-content-center row align-items-center">
-        <div id="formSubmitAlert" class="row text-center align-items-center justify-content-center">
-            <h5>If you have a question: <a class="btn btn-primary" style="border: 0px;margin:10px;" href="faq.html">FAQ</a></h5>
-        </div>
-    </div>
+    </nav>
     <div id="intro" class="container-fluid row text-center align-items-center pt-4">
         <div class="col-12">
             <h6>MORE THAN</h6>
@@ -47,12 +65,20 @@
         </div>
         <div class="col-12">
             <h6>Check out our collection of games & apps by scrolling down</h6>
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
-              </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-arrow-down-short"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4" />
+            </svg>
         </div>
     </div>
     <div class="row text-center">
+        <div class="appContainer container">
+            <a href="food-cal-ai.html">
+                <img class="img col-11 col-md-8 col-xl-6" src="images/FoodCalAiBanner.png" alt="AI Calorie Counter App">
+            </a>
+            <p>FoodCalAI: AI Calorie Counter</p>
+        </div>
         <div class="appContainer container">
             <a href="led-scroller.html">
                 <img class="img col-11 col-md-8 col-xl-6" src="images/ledScrollerImg.png" alt="LED Scroller Image">
@@ -79,7 +105,8 @@
         </div>
         <div class="appContainer container">
             <a href="speaker-cleaner.html">
-                <img class="img col-11 col-md-8 col-xl-6" src="images/speakerCleanerImg.png" alt="Speaker Cleaner Image">
+                <img class="img col-11 col-md-8 col-xl-6" src="images/speakerCleanerImg.png"
+                    alt="Speaker Cleaner Image">
             </a>
             <p>Speaker Cleaner - Remove Water</p>
         </div>
@@ -91,7 +118,8 @@
         </div>
         <div class="appContainer container">
             <a href="frequency-generator.html">
-                <img class="img col-11 col-md-8 col-xl-6" src="images/frequencyGeneratorImg.png" alt="Frequency Generator">
+                <img class="img col-11 col-md-8 col-xl-6" src="images/frequencyGeneratorImg.png"
+                    alt="Frequency Generator">
             </a>
             <p>Frequency Generator</p>
         </div>
@@ -112,11 +140,17 @@
         <div class="row justify-content-center text-center">
             <div class="col-11 col-md-10 col-xl-8">
                 <img src="images/webIcon.png" alt="profileIcon"><br>
-                <a class="btn btn-primary" style="border: 0px;margin-top: 25px;width: 350px;" href="about-me.html">About Me</a>
+                <a class="btn btn-primary" style="border: 0px;margin-top: 25px;width: 350px;" href="about-me.html">About
+                    Me</a>
                 <h2>Thank you for your support!</h2>
-                <p>Check out my games and apps on your mobile store. Download them for free and then let me know your opinion. You can reach me here: david.kolp97@gmail.com, I will try to reply as soon as I can :). I made these games and apps on my own in my spare time because I wanted to share something I enjoy with the world. The journey of using such a powerful tool as Unity 3D was a bit stressful at first but it managed to get me here.</p>
+                <p>Check out my games and apps on your mobile store. Download them for free and then let me know your
+                    opinion. You can reach me here: david.kolp97@gmail.com, I will try to reply as soon as I can :). I
+                    made these games and apps on my own in my spare time because I wanted to share something I enjoy
+                    with the world. The journey of using such a powerful tool as Unity 3D was a bit stressful at first
+                    but it managed to get me here.</p>
                 <p>Thank you sincerely, DCZT.</p>
-                <p>P.S. If you want to stay up to date, consider following my social media accounts. Links are below.</p>
+                <p>P.S. If you want to stay up to date, consider following my social media accounts. Links are below.
+                </p>
             </div>
         </div>
     </div>
@@ -124,31 +158,43 @@
         <div class="row align-items-center justify-content-center">
             <div class="col-12 p-1">
                 <a href="https://apps.apple.com/developer/david-krejci/id1737377675">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-apple" viewBox="0 0 16 16">
-                        <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
-                        <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
-                      </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-apple"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282" />
+                        <path
+                            d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282" />
+                    </svg>
                 </a>
                 <a href="https://play.google.com/store/apps/dev?id=7482177327817485362">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-google-play" viewBox="0 0 16 16">
-                        <path d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055zM1 13.396V2.603L6.846 8zM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27"/>
-                      </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                        class="bi bi-google-play" viewBox="0 0 16 16">
+                        <path
+                            d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055zM1 13.396V2.603L6.846 8zM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27" />
+                    </svg>
                 </a>
-                <a href="https://www.youtube.com/channel/UCdOwX66iYkkemMwqcf8K9Ww?view_as=subscriber?sub_confirmation=1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-youtube" viewBox="0 0 16 16">
-                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
-                      </svg>
+                <a
+                    href="https://www.youtube.com/channel/UCdOwX66iYkkemMwqcf8K9Ww?view_as=subscriber?sub_confirmation=1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-youtube"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                    </svg>
                 </a>
             </div>
-            <div class="col-12 pt-3 m-0 text-white-50">DCZT © 2024</div>
+            <div class="col-12 pt-3 m-0 text-white-50">DCZT © 2025</div>
             <div id="legalLinks" class="col-12 pt-3 m-0">
                 <a href="https://dczt.dev/eula-terms-of-use.html" class="text-white-50"><u>Terms of Use and EULA</u></a>
                 <a href="https://dczt.dev/app-privacy-policy.html" class="text-white-50"><u>App Privacy Policy</u></a>
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
