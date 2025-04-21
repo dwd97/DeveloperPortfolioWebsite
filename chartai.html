@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Device Redirect</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+  
+    img {
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Image shadow */
+      border-radius: 50px; /* Optional: rounded corners for a softer look */
+    }
+
+    .app-title {
+      margin-top: 0;
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+  
+    h1 {
+      color: #333;
+    }
+  </style>
+  <script>
+    window.onload = function () {
+      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      // Check for iPhone
+      if (/iPhone/i.test(userAgent)) {
+        window.location.href = "https://apps.apple.com/app/chart-ai-ai-assisted-trading/id6744277613";
+      }
+      // Check for Android
+      else if (/Android/i.test(userAgent)) {
+        window.location.href = "https://play.google.com/store/apps/details?id=com.dczt.chartai";
+      }
+      // Fallback for other devices
+      else {
+        document.getElementById("message").innerText = "Welcome! You're not on iPhone or Android.";
+      }
+    };
+  </script>
+</head>
+<body>
+  <img src="chartai-logo.png" alt="Chart AI app Logo" />
+  <div class="app-title">Chart AI App</div>
+  <h1 id="message">Detecting your device...</h1>
+</body>
+</html>
